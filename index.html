@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Jornada Ninja</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Em uma manhã tranquila em Konoha, você encontra um antigo pergaminho na biblioteca da vila. O pergaminho revela informações sobre uma lendária técnica secreta, escondida em algum lugar do mundo ninja. Determinado a encontrar esse poder, você decide seguir as pistas deixadas no pergaminho!</p>
+            <button class="btn-proximo" data-proximo="1">Vila da Folha (Konoha)</button>
+            <button class="btn-proximo" data-proximo="2">Vila da Areia (Suna)</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="img/mestre.PNG" alt="">
+            <p>Você começa sua jornada em Konoha, onde um dos sábios anciãos lhe diz que a primeira pista está em uma montanha perto da vila. Dizem que há uma antiga inscrição em um templo escondido. O que você fará?</p>
+            <button class="btn-proximo" data-proximo="3">Explorar o templo nas montanhas</button>
+            <button class="btn-proximo" data-proximo="4">Voltar para a vila e pedir mais informações</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Em Suna, você começa sua busca em meio ao deserto. O pergaminho menciona que a próxima pista está escondida em uma das antigas ruínas da vila. Você escolhe qual ruína investigar?</p>
+            <button class="btn-proximo" data-proximo="5">Explorar as ruínas do templo de Shukaku</button>
+            <button class="btn-proximo" data-proximo="6">Investigar o mercado antigo da vila</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="img/altar.PNG" alt="">
+            <p>Ao chegar nas montanhas, você encontra um templo antigo. No altar, há uma inscrição que revela que a próxima pista está em uma floresta na região do País da Água.</p>
+            <button class="btn-proximo" data-proximo="7">Partir para o País da Água</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desistindo da aventura">
+            <p>Você decide voltar para Konoha, desistindo da missão. Embora tenha retornado à vila, a dúvida sobre o que teria acontecido permanece com você.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="img/ruinas.PNG" alt="">
+            <p>Nas ruínas do templo de Shukaku, você encontra um mapa antigo escondido atrás de uma estátua. O mapa aponta que a próxima pista está localizada no País da Água.</p>
+            <button class="btn-proximo" data-proximo="7">Partir para o País da Água</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Ao investigar o mercado antigo, você encontra algumas pistas falsas. No entanto, você descobre que precisa retornar às ruínas para procurar mais detalhes.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar às ruínas do templo</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="img/estradas.png" alt="">
+            <p>Chegando ao País da Água, você se depara com uma bifurcação entre duas estradas. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pela estrada à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pela estrada à direita</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Após decidir investigar as ruínas, você encontra um mapa indicando que a próxima pista está no País da Água. É hora de partir novamente!</p>
+            <button class="btn-proximo" data-proximo="7">Partir para o País da Água</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="img/cachoeira.png" alt="">
+            <p>A estrada à esquerda leva você a uma antiga cachoeira, onde você encontra inscrições ninjas que indicam a entrada para o local secreto onde a técnica lendária está escondida.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a técnica secreta</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="img/vila-abandonada.png" alt="">
+            <p>A estrada à direita o leva a uma vila abandonada, sem sinais da técnica secreta. Você decide voltar e tentar a outra estrada.</p>
+            <button class="btn-proximo" data-proximo="12">Voltar e tentar a estrada à esquerda</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-tecnica-secreta.png" alt="Encontrando a técnica secreta">
+            <p>Você encontra a técnica secreta guardada por um ninja antigo. Com ela, você se torna um dos maiores ninjas de sua geração e decide usar o poder para proteger as vilas e manter a paz.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="img/cachoeira.png" alt="">
+            <p>De volta à bifurcação, você decide seguir pela estrada à esquerda. Finalmente, você encontra a cachoeira e as inscrições que indicam o local da técnica secreta.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a técnica secreta</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
